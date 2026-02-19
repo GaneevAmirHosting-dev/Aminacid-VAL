@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Справочник: Кортистатин-14</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background: #edf2f7;
+            font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            padding: 2rem 1rem;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 32px;
+            box-shadow: 0 15px 35px rgba(0,20,40,0.12);
+            overflow: hidden;
+        }
+        .header {
+            background: #0b1c2d;
+            color: white;
+            padding: 1.5rem 2.2rem;
+        }
+        .header h1 {
+            font-weight: 500;
+            font-size: 1.9rem;
+            letter-spacing: -0.02em;
+        }
+        .header .seq {
+            font-family: 'Fira Code', monospace;
+            font-size: 0.9rem;
+            color: #a3c0da;
+            margin-top: 0.5rem;
+            word-break: break-all;
+        }
+        .content {
+            padding: 2.2rem;
+        }
+        .section-title {
+            font-size: 1.5rem;
+            font-weight: 500;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #dde7f0;
+            color: #0b1c2d;
+        }
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+            gap: 1.2rem;
+        }
+        .card {
+            background: #f9fdfe;
+            border: 1px solid #cfddee;
+            border-radius: 24px;
+            padding: 1.3rem 1.5rem;
+            transition: 0.1s;
+        }
+        .code {
+            font-family: 'Fira Code', monospace;
+            background: #e3ecf5;
+            padding: 0.2rem 0.9rem;
+            border-radius: 30px;
+            font-weight: 600;
+            font-size: 1.3rem;
+            color: #103456;
+            display: inline-block;
+            margin-bottom: 0.75rem;
+            border: 1px solid #b8cee4;
+        }
+        .full-name {
+            font-weight: 600;
+            font-size: 1.1rem;
+            color: #1a324b;
+            margin-bottom: 0.3rem;
+        }
+        .chem-name {
+            font-family: 'Times New Roman', serif;
+            background: #f0f5fa;
+            padding: 0.3rem 0.8rem;
+            border-radius: 30px;
+            font-size: 1rem;
+            color: #1c4565;
+            display: inline-block;
+            margin: 0.5rem 0 0.3rem;
+            border: 1px solid #c0d2e5;
+        }
+        .meta {
+            font-size: 0.9rem;
+            color: #3f5e7c;
+            margin-top: 0.5rem;
+            border-top: 1px dashed #b8cde0;
+            padding-top: 0.5rem;
+        }
+        .reagent-box {
+            background: #eaf1f9;
+            border-radius: 24px;
+            padding: 1.5rem 2rem;
+            margin: 2rem 0 0.5rem;
+        }
+        .reagent-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.2rem;
+            margin-top: 1rem;
+        }
+        .reagent-item {
+            background: white;
+            border-radius: 20px;
+            padding: 1.2rem 1.3rem;
+            border-left: 5px solid #527a9c;
+        }
+        .reagent-code {
+            font-family: 'Fira Code', monospace;
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: #003366;
+            background: #f0f7ff;
+            display: inline-block;
+            padding: 0.1rem 1rem;
+            border-radius: 40px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h1>Кортистатин-14 · словарь компонентов</h1>
+        <div class="seq">H-Ser-Gln-Lys-Thr-Pro-Ser-Ser-Gln-Asp-Leu-Ala-Leu-Glu-Leu-Leu-Pro-Ala-Arg-Glu-Arg-Ala-Glu-Gln-Asn-Pro-Gly-Leu-Gln-Asp-Ser-Ala-Arg-Phe-OH</div>
+    </div>
+    <div class="content">
+
+        <h2 class="section-title">Аминокислотные остатки и концы</h2>
+        <div class="card-grid">
+            <!-- H- -->
+            <div class="card">
+                <span class="code">H-</span>
+                <div class="full-name">N-концевая аминогруппа</div>
+                <div class="chem-name">–NH₂</div>
+                <div class="meta">свободная, неацетилированная</div>
+            </div>
+
+            <!-- Ser -->
+            <div class="card">
+                <span class="code">Ser</span>
+                <div class="full-name">Серин</div>
+                <div class="chem-name">2-амино-3-гидроксипропановая кислота</div>
+                <div class="meta">C₃H₇NO₃</div>
+            </div>
+
+            <!-- Gln -->
+            <div class="card">
+                <span class="code">Gln</span>
+                <div class="full-name">Глутамин</div>
+                <div class="chem-name">2-амино-4-карбамоилбутановая кислота</div>
+                <div class="meta">C₅H₁₀N₂O₃</div>
+            </div>
+
+            <!-- Lys -->
+            <div class="card">
+                <span class="code">Lys</span>
+                <div class="full-name">Лизин</div>
+                <div class="chem-name">2,6-диаминогексановая кислота</div>
+                <div class="meta">C₆H₁₄N₂O₂</div>
+            </div>
+
+            <!-- Thr -->
+            <div class="card">
+                <span class="code">Thr</span>
+                <div class="full-name">Треонин</div>
+                <div class="chem-name">2-амино-3-гидроксибутановая кислота</div>
+                <div class="meta">C₄H₉NO₃</div>
+            </div>
+
+            <!-- Pro -->
+            <div class="card">
+                <span class="code">Pro</span>
+                <div class="full-name">Пролин</div>
+                <div class="chem-name">пирролидин-2-карбоновая кислота</div>
+                <div class="meta">C₅H₉NO₂</div>
+            </div>
+
+            <!-- Asp -->
+            <div class="card">
+                <span class="code">Asp</span>
+                <div class="full-name">Аспарагиновая кислота</div>
+                <div class="chem-name">2-аминобутандиовая кислота</div>
+                <div class="meta">C₄H₇NO₄</div>
+            </div>
+
+            <!-- Leu -->
+            <div class="card">
+                <span class="code">Leu</span>
+                <div class="full-name">Лейцин</div>
+                <div class="chem-name">2-амино-4-метилпентановая кислота</div>
+                <div class="meta">C₆H₁₃NO₂</div>
+            </div>
+
+            <!-- Ala -->
+            <div class="card">
+                <span class="code">Ala</span>
+                <div class="full-name">Аланин</div>
+                <div class="chem-name">2-аминопропановая кислота</div>
+                <div class="meta">C₃H₇NO₂</div>
+            </div>
+
+            <!-- Glu -->
+            <div class="card">
+                <span class="code">Glu</span>
+                <div class="full-name">Глутаминовая кислота</div>
+                <div class="chem-name">2-аминопентандиовая кислота</div>
+                <div class="meta">C₅H₉NO₄</div>
+            </div>
+
+            <!-- Arg -->
+            <div class="card">
+                <span class="code">Arg</span>
+                <div class="full-name">Аргинин</div>
+                <div class="chem-name">2-амино-5-гуанидинопентановая кислота</div>
+                <div class="meta">C₆H₁₄N₄O₂</div>
+            </div>
+
+            <!-- Asn -->
+            <div class="card">
+                <span class="code">Asn</span>
+                <div class="full-name">Аспарагин</div>
+                <div class="chem-name">2-амино-3-карбамоилпропановая кислота</div>
+                <div class="meta">C₄H₈N₂O₃</div>
+            </div>
+
+            <!-- Gly -->
+            <div class="card">
+                <span class="code">Gly</span>
+                <div class="full-name">Глицин</div>
+                <div class="chem-name">аминоуксусная кислота</div>
+                <div class="meta">C₂H₅NO₂</div>
+            </div>
+
+            <!-- Phe -->
+            <div class="card">
+                <span class="code">Phe</span>
+                <div class="full-name">Фенилаланин</div>
+                <div class="chem-name">2-амино-3-фенилпропановая кислота</div>
+                <div class="meta">C₉H₁₁NO₂</div>
+            </div>
+
+            <!-- -OH -->
+            <div class="card">
+                <span class="code">-OH</span>
+                <div class="full-name">C-концевая карбоксильная группа</div>
+                <div class="chem-name">–COOH</div>
+                <div class="meta">свободная кислота</div>
+            </div>
+        </div>
+
+        <!-- РЕАГЕНТЫ (только 2-CTC, Fmoc, DIPEA) -->
+        <div class="reagent-box">
+            <h2 style="font-size: 1.4rem; font-weight: 500; margin-bottom: 0.5rem;">Реагенты (упомянутые)</h2>
+            <div class="reagent-grid">
+                <div class="reagent-item">
+                    <div class="reagent-code">2-CTC</div>
+                    <div class="full-name" style="margin-top: 0.3rem;">2-хлортритилхлоридная смола</div>
+                    <div class="chem-name" style="background: #eaf3fc;">полимер с группой -C(Ar)₂(Ar-Cl)</div>
+                    <div class="meta">CAS: 42074-68-0</div>
+                </div>
+                <div class="reagent-item">
+                    <div class="reagent-code">Fmoc</div>
+                    <div class="full-name" style="margin-top: 0.3rem;">Флуоренилметоксикарбонил</div>
+                    <div class="chem-name" style="background: #eaf3fc;">C₁₅H₁₁O₂–</div>
+                    <div class="meta">CAS: 83137-87-5 (производные)</div>
+                </div>
+                <div class="reagent-item">
+                    <div class="reagent-code">DIPEA</div>
+                    <div class="full-name" style="margin-top: 0.3rem;">N,N-Диизопропилэтиламин</div>
+                    <div class="chem-name" style="background: #eaf3fc;">C₈H₁₉N</div>
+                    <div class="meta">CAS: 7087-68-5</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
